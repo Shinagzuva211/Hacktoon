@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050b24, #101b4d, #020617);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aab5e8;
+    margin-bottom: 35px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card,
+.status {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 25px;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 10px;
+    background: #263a85;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #405bc0;
+    transform: translateY(-2px);
+}
+
+.status p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.status span {
+    color: #63e6ff;
+    font-weight: bold;
+}
+
+.launch {
+    background: #00a878;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.launch:hover {
+    background: #00c991;
+}
+
+.reset {
+    background: #8b2635;
+}
+
+.reset:hover {
+    background: #b9364a;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}

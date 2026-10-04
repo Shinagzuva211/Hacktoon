@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Mission Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🚀 SPACE MISSION DESIGNER</h1>
+        <p class="subtitle">O'z kosmik missiyangizni yarating!</p>
+
+        <div class="game">
+
+            <div class="card">
+                <h2>🌍 1. Maqsad</h2>
+
+                <button onclick="selectMission('Oy', 20, 1000)">🌙 Oy</button>
+                <button onclick="selectMission('Mars', 50, 2500)">🔴 Mars</button>
+                <button onclick="selectMission('Asteroid', 35, 1800)">☄️ Asteroid</button>
+                <button onclick="selectMission('Yer orbitasi', 10, 500)">🌎 Yer orbitasi</button>
+            </div>
+
+            <div class="card">
+                <h2>🚀 2. Raketa</h2>
+
+                <button onclick="selectRocket('Falcon', 30, 3000)">
+                    Falcon — $30M / 3000 kg
+                </button>
+
+                <button onclick="selectRocket('Atlas', 50, 6000)">
+                    Atlas — $50M / 6000 kg
+                </button>
+
+                <button onclick="selectRocket('Titan', 70, 10000)">
+                    Titan — $70M / 10000 kg
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>🛰️ 3. Jihozlar</h2>
+
+                <button onclick="addEquipment('Kamera', 5, 300)">
+                    📷 Kamera — $5M / 300 kg
+                </button>
+
+                <button onclick="addEquipment('Robot', 15, 800)">
+                    🤖 Robot — $15M / 800 kg
+                </button>
+
+                <button onclick="addEquipment('Laboratoriya', 20, 1000)">
+                    🔬 Laboratoriya — $20M / 1000 kg
+                </button>
+
+                <button onclick="addEquipment('Quyosh paneli', 8, 400)">
+                    ☀️ Quyosh paneli — $8M / 400 kg
+                </button>
+
+                <button onclick="addEquipment('Aloqa tizimi', 7, 200)">
+                    📡 Aloqa tizimi — $7M / 200 kg
+                </button>
+            </div>
+
+            <div class="status">
+                <h2>📊 Missiya holati</h2>
+
+                <p>Maqsad: <span id="mission">Tanlanmagan</span></p>
+                <p>Raketa: <span id="rocket">Tanlanmagan</span></p>
+                <p>Jihozlar: <span id="equipment">0</span></p>
+
+                <p>💰 Byudjet: <b>$100M</b></p>
+                <p>💸 Xarajat: <span id="cost">0</span> M</p>
+
+                <p>⚖️ Massa: <span id="weight">0</span> kg</p>
+
+                <button class="launch" onclick="launchMission()">
+                    🚀 MISSIYANI ISHGA TUSHIRISH
+                </button>
+
+                <button class="reset" onclick="resetGame()">
+                    🔄 Qaytadan boshlash
+                </button>
+
+                <h2 id="result"></h2>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
